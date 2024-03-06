@@ -13,6 +13,8 @@ namespace Examen_practico_RA2_Yileini_Martinez
 {
     public partial class Form1 : Form
     {
+        Estudiante estudiante = new Estudiante();
+        
         public Form1()
         {
             InitializeComponent();
@@ -93,13 +95,13 @@ namespace Examen_practico_RA2_Yileini_Martinez
         private void btn_Agregar_Click(object sender, EventArgs e)
         {
           
-            string matricula  = txt_Matricula.Text;
-            string nombre = txt_Nombre.Text;
-            string direccion = txt_Direccion.Text;
-            string email = txt_Email.Text;
-            string maestro = txt_Maestro_titular.Text;
+          estudiante.Matricula= txt_Matricula.Text;
+          estudiante.Nombre = txt_Nombre.Text;
+          estudiante.Direccion= txt_Direccion.Text;
+          estudiante.Email = txt_Email.Text;
+          estudiante.Maestro_titular = txt_Maestro_titular.Text;
+            
             double telefono;
-
             telefono = Convert.ToDouble(txt_Telefono.Text);
             
             string genero = "";
